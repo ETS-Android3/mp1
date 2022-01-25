@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Mentorio</string>
+
+    <string name="mentorio_head">Mentorio</string>
+    <string name="regAcc">Registering new Account</string>
+    <string name="usernameHint">Username</string>
+    <string name="emailHint">Email</string>
+    <string name="passHint">Password</string>
+    <string name="confirmHint">Confirm Password</string>
+
+    <string name="contStudy"><b>Continue Studying:</b> <br></br><br></br>
+    <b>Stock Market Fundamentals</b><br></br>
+    by Alan Suryajana<br></br>
+    <b>SESSION 2 - Uptrend and Downtrend</b><br></br><br></br>
+    <b>Check more...</b></string>
+    <string name="trending_class">Trending Class</string>
+
+
+</resources>

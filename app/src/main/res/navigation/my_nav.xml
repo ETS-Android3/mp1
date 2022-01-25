@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/userPartition">
+
+    <fragment
+        android:id="@+id/userPartition"
+        android:name="com.mobprog.mentorio_app.UserPartition"
+        android:label="UserPartition" />
+    <fragment
+        android:id="@+id/homePartition"
+        android:name="com.mobprog.mentorio_app.HomePartition"
+        android:label="HomePartition" />
+    <fragment
+        android:id="@+id/coursesPartition"
+        android:name="com.mobprog.mentorio_app.CoursesPartition"
+        android:label="CoursesPartition" />
+</navigation>

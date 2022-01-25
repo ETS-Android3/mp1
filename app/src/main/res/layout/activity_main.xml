@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Register Page -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_pa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/register_pa"
+    >
+
+    <!-- Mentorio Title-->
+    <TextView
+        android:id="@+id/mentorio_re"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+
+        android:text="@string/mentorio_head"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="64sp"
+        android:textColor="#FFFFFF" />
+
+    <!-- regist new acc -->
+    <TextView
+        android:id="@+id/registAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center"
+
+        android:text="@string/regAcc"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        />
+
+    <!-- username field -->
+    <!--suppress AndroidUnknownAttribute -->
+    <EditText
+        android:id="@+id/username_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/RegistPageFields"
+        android:inputType="text"
+        android:background="@drawable/txtfieldborder"
+        android:hint="@string/usernameHint"
+        />
+
+    <!-- email field -->
+    <EditText
+        android:id="@+id/email_field"
+
+        style="@style/RegistPageFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/txtfieldborder"
+        android:hint="@string/emailHint"
+        />
+
+    <!-- pass field -->
+    <EditText
+        android:id="@+id/password_field"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/RegistPageFields"
+        android:inputType="textPassword"
+        android:background="@drawable/txtfieldborder"
+        android:hint="@string/passHint"
+         />
+
+    <!-- confirm pass field -->
+    <EditText
+        android:id="@+id/confirm_field"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/RegistPageFields"
+        android:inputType="textPassword"
+        android:background="@drawable/txtfieldborder"
+        android:hint="@string/confirmHint"
+        />
+
+    <Button
+        android:id="@+id/registButton"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFFFFF"
+
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+
+        android:backgroundTint="#213859"
+        android:shadowColor="#00FFFFFF"
+        android:hint="Register Now"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:onClick="onClick"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>
+
+
+
+
+

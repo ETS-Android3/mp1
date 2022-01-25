@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profile_pag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/profile_page"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/uname_userpage"
+        android:layout_height="50dp"
+        android:layout_width="350dp"
+        android:layout_gravity="center_vertical"
+        android:text="Hello, "
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="50dp"
+        />
+
+    <Button
+        android:id="@+id/editprofile"
+        android:layout_gravity="center"
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+
+        android:hint="Edit Profile"
+        android:textColorHint="@color/white"
+        android:textSize="25sp"
+        android:backgroundTint="#213859"
+        android:shadowColor="#00FFFFFF"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:id="@+id/bookmarked"
+        android:layout_gravity="center"
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+
+        android:hint="Bookmarked Courses"
+        android:textColorHint="@color/white"
+        android:textSize="25sp"
+        android:backgroundTint="#213859"
+        android:shadowColor="#00FFFFFF"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/finished"
+        android:layout_gravity="center"
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+
+        android:hint="Finished Courses"
+        android:textColorHint="@color/white"
+        android:textSize="25sp"
+        android:backgroundTint="#213859"
+        android:shadowColor="#00FFFFFF"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:id="@+id/aboutapp"
+        android:layout_gravity="center"
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+
+        android:hint="About Mentorio"
+        android:textColorHint="@color/white"
+        android:textSize="25sp"
+        android:backgroundTint="#213859"
+        android:shadowColor="#00FFFFFF"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:id="@+id/logout"
+        android:layout_gravity="center"
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+
+        android:hint="Log Out"
+        android:textColorHint="@color/white"
+        android:textSize="25sp"
+        android:backgroundTint="#ff0000"
+        android:shadowColor="#00FFFFFF"
+        android:layout_marginBottom="100dp"
+        android:onClick="LogOutAcc"
+        />
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/navbar"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/footermenurounded"-->
+<!--        app:itemTextColor="@drawable/bnavbarstylings"-->
+<!--        app:itemIconTint="@drawable/bnavbarstylings"-->
+<!--        app:menu="@menu/bottomnavbarmenu"-->
+
+<!--        />-->
+
+</LinearLayout>
+

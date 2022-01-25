@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profile_pag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/profile_page"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_height="70dp"
+        android:layout_width="350dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_vertical"
+        android:text="About Mentorio"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="0dp"
+        />
+    <TextView
+        android:layout_height="70dp"
+        android:layout_width="350dp"
+        android:layout_marginTop="-50dp"
+        android:layout_gravity="center_vertical"
+        android:text="___________________"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="60dp"
+        />
+    <TextView
+        android:layout_height="300dp"
+        android:layout_width="350dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_vertical"
+        android:text="Mentorio adalah sebuah aplikasi yang dikembangkan dengan tujuan menjembatani pelajar dengan penyedia ilmu."
+        android:textStyle="normal"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="130dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="HOME"
+        android:textColorHint="#FFFFFF"
+        android:textSize="28sp"
+        android:onClick="goHome"
+        />
+
+
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/navbar"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/footermenurounded"-->
+<!--        app:itemTextColor="@drawable/bnavbarstylings"-->
+<!--        app:itemIconTint="@drawable/bnavbarstylings"-->
+<!--        app:menu="@menu/bottomnavbarmenu"-->
+
+<!--        />-->
+
+</LinearLayout>
+

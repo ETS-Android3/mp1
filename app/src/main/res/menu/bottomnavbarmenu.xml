@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:onClick="onClick"
+        />
+    <item
+        android:id="@+id/book"
+        android:title="Courses"
+        android:enabled="true"
+        android:icon="@drawable/book"
+        android:onClick="onClick"
+        />
+    <item
+        android:id="@+id/user"
+        android:title="User"
+        android:enabled="true"
+        android:icon="@drawable/user"
+        android:onClick="onClick"
+        />
+</menu>
