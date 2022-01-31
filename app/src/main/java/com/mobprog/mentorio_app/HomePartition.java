@@ -1,30 +1,29 @@
 package com.mobprog.mentorio_app;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.Button;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AppCompatActivity;
 
-import com.mobprog.memtorio_app.R;
+public class HomePartition extends AppCompatActivity {
 
-public class HomePartition extends Fragment {
+    Button homeBtn;
 
-    @Nullable
-    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.homepage);
 
+//        PERALIHAN PAGE
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceStates){
-        View view = inflater.inflate(R.layout.homepage, container, false);
-        return view;
+        homeBtn.findViewById(R.id.homePartition);
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent homeIntent = new Intent(HomePartition.this, HomePartition.class);
+                startActivity(homeIntent);
+            }
+        });
 
-
-
-
-    }
-}
+    }}

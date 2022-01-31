@@ -8,12 +8,15 @@
     <string name="passHint">Password</string>
     <string name="confirmHint">Confirm Password</string>
 
-    <string name="contStudy"><b>Continue Studying:</b> <br></br><br></br>
-    <b>Stock Market Fundamentals</b><br></br>
-    by Alan Suryajana<br></br>
-    <b>SESSION 2 - Uptrend and Downtrend</b><br></br><br></br>
-    <b>Check more...</b></string>
+    <string name="header_contStudy"><b>Continue Studying:</b></string>
+    <string name="Subject_contStudy"><b>Stock Market Fundamentals</b></string>
+    <string name="lecturer_contStudy">by Alan Suryajana</string>
+    <string name="chapter_contStudy"><b>SESSION 2 - Uptrend and Downtrend</b></string>
+    <string name="checkMoreBtn"><b>Check more...</b></string>
     <string name="trending_class">Trending Class</string>
+    <string name="dashlines">___________________</string>
+    <string name="about_mentorio">About Mentorio</string>
+    <string name="mentorio_desc">Mentorio adalah sebuah aplikasi yang dikembangkan dengan tujuan menjembatani pelajar dengan penyedia ilmu.</string>
 
 
 </resources>

@@ -1,77 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/homepage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/homepage"
-    android:orientation="vertical"
-    tools:ignore="ExtraText">
+    >
 
-    <ImageView
-        android:id="@+id/header_iklan"
-        android:layout_width="350dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="40dp"
-        android:background="#000000"
-        android:gravity="center_horizontal"
-        android:src="@drawable/memementorio" />
-
-    <TextView
-        android:id="@+id/lastCourse"
-        android:layout_width="350dp"
-        android:layout_height="180dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/roundedbox"
-
-        android:padding="20dp"
-        android:text="@string/contStudy"
-        android:textColor="#203D67"
-
-        android:textSize="16sp" />
-
-    <TextView
-        android:layout_width="350dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="15dp"
-        android:text="@string/trending_class"
-        android:textColor="#FFFFFF"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/stock_market"
-
-        />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/contentArea"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#ffff"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:id="@+id/header_iklan"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+            android:background="#000000"
+            android:gravity="center_horizontal"
+            android:src="@drawable/memementorio" />
+
+        <!--continue study-->
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="180dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/roundedbox"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:id="@+id/continueStudyBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:text="@string/header_contStudy"
+                android:textColor="#203D67"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/latestcoursename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+
+                android:layout_below="@id/continueStudyBox"
+                android:text="@string/Subject_contStudy"
+                android:textColor="#203D67"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/latestcourselecture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+
+                android:layout_below="@id/latestcoursename"
+                android:text="@string/lecturer_contStudy"
+                android:textColor="#203D67"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/latestcoursepart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+
+                android:layout_below="@id/latestcourselecture"
+                android:text="@string/chapter_contStudy"
+                android:textColor="#203D67"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/checkmore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+
+                android:layout_below="@id/latestcoursepart"
+                android:text="@string/checkMoreBtn"
+                android:textColor="#203D67"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+<!--        trending class-->
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/trending_class"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/stock_market"/>
+    </LinearLayout>
+
+<!--    footer menu-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/contentArea"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/footermenurounded"
         app:menu="@menu/bottom_menu"
 
         />
 
-    <!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--            android:id="@+id/navbar"-->
-<!--            android:layout_width="350dp"-->
-<!--            android:layout_height="60dp"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:background="@drawable/footermenurounded"-->
-<!--            app:itemIconTint="@drawable/bnavbarstylings"-->
-<!--            app:itemTextColor="@drawable/bnavbarstylings"-->
-<!--            app:menu="@menu/bottomnavbarmenu"-->
-
-<!--            />-->
-
-
-</LinearLayout>
+</RelativeLayout>

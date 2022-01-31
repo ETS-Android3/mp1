@@ -8,7 +8,7 @@
 
     <item
         android:id="@+id/coursesPartition"
-        android:title="Book" android:icon="@drawable/book" />
+        android:title="Courses" android:icon="@drawable/book" />
 
     <item
         android:id="@+id/userPartition"

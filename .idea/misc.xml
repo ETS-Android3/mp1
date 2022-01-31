@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/MentorioApp/app/src/main/res/drawable-v24/footermenurounded.xml" value="0.245" />
+        <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/MentorioApp/app/src/main/res/layout/aboutus_page.xml" value="0.17831813576494426" />
+        <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/MentorioApp/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/MentorioApp/app/src/main/res/layout/courses_page.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/MentorioApp/app/src/main/res/layout/homepage.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/MentorioApp/app/src/main/res/menu/bottom_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/MentorioApp/app/src/main/res/menu/bottomnavbarmenu.xml" value="0.36666666666666664" />
         <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/gslcrevised/app/src/main/res/drawable-v24/bnavbarstylings.xml" value="0.2203125" />
         <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/gslcrevised/app/src/main/res/layout/aboutus_page.xml" value="0.20416666666666666" />
         <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/gslcrevised/app/src/main/res/layout/activity_main.xml" value="0.1" />

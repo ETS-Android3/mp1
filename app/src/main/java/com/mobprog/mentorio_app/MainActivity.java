@@ -30,11 +30,6 @@ public class MainActivity extends AppCompatActivity{
                 setContentView(R.layout.homepage);
             }
         });
-
-
-//        BottomNavigationView bottomNavigationView = findViewById(R.id.navbar);
-//
-//        bottomNavigationView.setOnItemSelectedListener(this);
     }
 
 
@@ -52,31 +47,4 @@ public class MainActivity extends AppCompatActivity{
          startActivity(intent);
     }
 
-
-//    private boolean loadFragment(Fragment fragment) {
-//        if (fragment != null) {
-//            getSupportFragmentManager().beginTransaction()
-//                    .replace(R.id.navbar, fragment)
-//                    .commit();
-//            return true;
-//        }
-//        return false;
-//    }
-
-//    @Override
-//    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//        Fragment fragment = null;
-//        switch (item.getItemId()){
-//            case R.id.home:
-//                fragment = new HomePartition();
-//                break;
-//            case R.id.book:
-//                fragment = new CoursesPartition();
-//                break;
-//            case R.id.user:
-//                fragment = new UserPartition();
-//                break;
-//        }
-//        return loadFragment(fragment);
-//    }
 }
