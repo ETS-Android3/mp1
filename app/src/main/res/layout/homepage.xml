@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:hwads="http://schemas.android.com/tools"
     android:id="@+id/homepage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/homepage"
-    >
+    android:background="@drawable/homepage">
 
     <LinearLayout
         android:id="@+id/contentArea"
@@ -15,17 +15,19 @@
         android:layout_centerHorizontal="true"
         >
 
-        <ImageView
-            android:id="@+id/header_iklan"
-            android:layout_width="350dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="40dp"
-            android:background="#000000"
-            android:gravity="center_horizontal"
-            android:src="@drawable/memementorio" />
 
+
+            <com.huawei.hms.ads.banner.BannerView
+                android:id="@+id/hw_banner_view"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
+                android:background="#000000"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                hwads:adId="testw6vs28auh3"
+                hwads:bannerSize="BANNER_SIZE_360_57"/>
         <!--continue study-->
         <RelativeLayout
             android:layout_width="350dp"
@@ -117,7 +119,9 @@
     </LinearLayout>
 
 <!--    footer menu-->
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/botNav"
         android:layout_marginStart="15dp"
         android:layout_below="@id/contentArea"
         android:layout_width="380dp"

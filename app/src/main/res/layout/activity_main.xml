@@ -41,71 +41,79 @@
         android:textColor="#FFFFFF"
         />
 
-    <!-- username field -->
-    <!--suppress AndroidUnknownAttribute -->
-    <EditText
-        android:id="@+id/username_field"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/RegistPageFields"
-        android:inputType="text"
-        android:background="@drawable/txtfieldborder"
-        android:hint="@string/usernameHint"
-        />
-
-    <!-- email field -->
-    <EditText
-        android:id="@+id/email_field"
-
-        style="@style/RegistPageFields"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:background="@drawable/txtfieldborder"
-        android:hint="@string/emailHint"
-        />
-
-    <!-- pass field -->
-    <EditText
-        android:id="@+id/password_field"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/RegistPageFields"
-        android:inputType="textPassword"
-        android:background="@drawable/txtfieldborder"
-        android:hint="@string/passHint"
-         />
-
-    <!-- confirm pass field -->
-    <EditText
-        android:id="@+id/confirm_field"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/RegistPageFields"
-        android:inputType="textPassword"
-        android:background="@drawable/txtfieldborder"
-        android:hint="@string/confirmHint"
-        />
-
-    <Button
-        android:id="@+id/registButton"
-        android:layout_marginTop="60dp"
+    <com.huawei.hms.support.hwid.ui.HuaweiIdAuthButton
+        android:id="@+id/huaweiAuthBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColorHint="#FFFFFF"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"
+        />
 
-        android:textAlignment="center"
-        android:layout_gravity="center_horizontal"
+<!--    &lt;!&ndash; username field &ndash;&gt;-->
+<!--    &lt;!&ndash;suppress AndroidUnknownAttribute &ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:id="@+id/username_field"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        style="@style/RegistPageFields"-->
+<!--        android:inputType="text"-->
+<!--        android:background="@drawable/txtfieldborder"-->
+<!--        android:hint="@string/usernameHint"-->
+<!--        />-->
 
-        android:backgroundTint="#213859"
-        android:shadowColor="#00FFFFFF"
-        android:hint="Register Now"
-        android:textSize="25sp"
-        android:padding="10dp"
-        android:onClick="onClick"
-        tools:ignore="HardcodedText" />
+<!--    &lt;!&ndash; email field &ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:id="@+id/email_field"-->
+
+<!--        style="@style/RegistPageFields"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:inputType="textEmailAddress"-->
+<!--        android:background="@drawable/txtfieldborder"-->
+<!--        android:hint="@string/emailHint"-->
+<!--        />-->
+
+<!--    &lt;!&ndash; pass field &ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:id="@+id/password_field"-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        style="@style/RegistPageFields"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:background="@drawable/txtfieldborder"-->
+<!--        android:hint="@string/passHint"-->
+<!--         />-->
+
+<!--    &lt;!&ndash; confirm pass field &ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:id="@+id/confirm_field"-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        style="@style/RegistPageFields"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:background="@drawable/txtfieldborder"-->
+<!--        android:hint="@string/confirmHint"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/registButton"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColorHint="#FFFFFF"-->
+
+<!--        android:textAlignment="center"-->
+<!--        android:layout_gravity="center_horizontal"-->
+
+<!--        android:backgroundTint="#213859"-->
+<!--        android:shadowColor="#00FFFFFF"-->
+<!--        android:hint="Register Now"-->
+<!--        android:textSize="25sp"-->
+<!--        android:padding="10dp"-->
+<!--        android:onClick="onClick"-->
+<!--        tools:ignore="HardcodedText" />-->
 
 
 </LinearLayout>
